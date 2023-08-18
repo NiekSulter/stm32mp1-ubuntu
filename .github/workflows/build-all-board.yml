@@ -15,6 +15,9 @@ jobs:
 
       - name: Update image
         run: sudo apt-get update && sudo apt-get upgrade -y
+
+      - name: Install apt-get-add
+        run: sudo apt-get install software-properties-common
           
       - name: Install depends
         run: sudo apt-get install -y zip lzop lzma gettext libmpc-dev u-boot-tools libncurses5-dev pv gzip flex bison ncurses-base build-essential device-tree-compiler
